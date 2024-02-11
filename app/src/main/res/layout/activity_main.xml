@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollable"
+        tools:listitem="@layout/rcv_one_ele" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/healthbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/alatsi"
+                android:paddingHorizontal="10dp"
+
+                android:paddingVertical="3dp"
+                android:text="Health"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+            android:id="@+id/entertainmentbtn"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_bg_default"
+            android:paddingVertical="3dp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/alatsi"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Entertainment" />
+            <TextView
+            android:id="@+id/generalbtn"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_bg_default"
+            android:paddingVertical="3dp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/alatsi"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="General" />
+            <TextView
+                android:id="@+id/buinessbtn"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_bg_default"
+                android:paddingVertical="3dp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/alatsi"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Business" />
+            <TextView
+                android:id="@+id/sciencebtn"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_bg_default"
+                android:paddingVertical="3dp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/alatsi"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Science" />
+            <TextView
+                android:id="@+id/sportsbtn"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_bg_default"
+                android:paddingVertical="3dp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/alatsi"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sports" />
+            <TextView
+                android:id="@+id/techbtn"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_bg_default"
+                android:paddingVertical="3dp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/alatsi"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Technology" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

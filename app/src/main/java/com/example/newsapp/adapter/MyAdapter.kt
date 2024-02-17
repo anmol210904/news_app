@@ -1,9 +1,6 @@
 package com.example.newsapp.adapter
 
-
-
 import android.content.Context
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.newsapp.R
 import com.example.newsapp.models.Article
-
 
 class MyAdapter(private val context: Context, private val itemList: ArrayList<Article>) :
     RecyclerView.Adapter<MyAdapter.ViewHolder>() {

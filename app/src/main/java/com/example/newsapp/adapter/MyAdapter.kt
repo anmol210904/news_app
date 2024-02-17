@@ -18,6 +18,8 @@ import com.example.newsapp.models.Article
 class MyAdapter(private val context: Context, private val itemList: ArrayList<Article>) :
     RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
+        //this text added to test github
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.rcv_one_ele, parent, false)
         return ViewHolder(view)
